@@ -14,6 +14,7 @@
 # define PUSH_SWAP_H
 
 # define ERROR 1
+# define OVERFLOW 2147483648
 
 # include <stdio.h>
 # include <unistd.h>

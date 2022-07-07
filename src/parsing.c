@@ -55,7 +55,7 @@ static int	check_min_max(char **argv)
 	i = 1;
 	while (argv[i])
 	{
-		if (ft_atoi(argv[i]) == 2147483648)
+		if (ft_atoi(argv[i]) == OVERFLOW)
 			return (ERROR);
 		i++;
 	}

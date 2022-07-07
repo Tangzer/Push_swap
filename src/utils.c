@@ -72,14 +72,14 @@ long	ft_atoi(const char *str)
 	while (str[i])
 	{
 		if (str[i] < '0' && str[i] > '9')
-			return (2147483648);
+			return (OVERFLOW);
 		res *= 10;
 		res += str[i] - '0';
 		i++;
 	}
 	if (neg == -1 && res - 1 > INT_MAX)
-		return (2147483648);
+		return (OVERFLOW);
 	if (neg == 1 && res > INT_MAX)
-		return (2147483648);
+		return (OVERFLOW);
 	return (res * neg);
 }
